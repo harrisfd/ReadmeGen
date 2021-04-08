@@ -1,0 +1,23 @@
+{
+  "name": "ReadmeGen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrisfd/ReadmeGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrisfd/ReadmeGen/issues"
+  },
+  "homepage": "https://github.com/harrisfd/ReadmeGen#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
