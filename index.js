@@ -35,13 +35,17 @@ function init() {
         },
         {
             type: "input",
-            name: "tests/roadmap",
-            message: "What is the roadmap/test for your project?"
+            name: "roadmap",
+            message: "What are plans for future development?"
         },
         {
             type: "input",
             name: "questions",
             message: "For Any Questions enter your email address"
+        }, {
+            type: "input",
+            name: "github",
+            message: "Enter your Github user name"
         },
         {
             type: "confirm",
@@ -51,10 +55,13 @@ function init() {
     ])
         .then((answers) => {
             console.log(answers)
-            console.log(generate(answers))
+            markdown(answers)
 
         })
 }
 
-
+function markdown(data) {
+    const datastring=generate(data)
+    fs.writeFileSync(path.join(__dirname,"readme.md"),datastring)
+}
 init()
